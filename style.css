@@ -1,0 +1,323 @@
+/* --------------Global items--------------- */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* --------------Navbar area--------------- */
+.navbar{
+    width: 90%;
+    margin: 0 auto;
+    border-bottom: 2px solid #0D3A4F;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #0D3A4F;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 4;
+    background-color: white;
+}
+
+.navbar .logo img{
+    width: 25px;
+    height: 25px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.navbar ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.navbar li{
+    padding: 10px;
+    border-radius: 6px;
+    transition: all;
+    transition-timing-function: ease-in-out;
+    transition-duration: 400ms;
+}
+.navbar li:hover{
+    background-color: #0D3A4F;
+    color: white;
+    cursor: pointer;
+}
+
+.navbar li a{
+    text-decoration: none;
+    color: inherit;
+}
+
+/* --------------Hero section--------------- */
+#hero{
+    margin-top: 20px;
+    position: relative;
+    width: 90%;
+    height: 70vh;
+    background-image: url('./Assets/pexels-pixabay-261388.jpg');
+    background-size: cover;
+    background-position: bottom center;
+    position: relative;
+    color: white;
+    margin-bottom: 5px;
+}
+
+#hero:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    top: 0;
+    left: 0;
+    opacity: .7;
+}
+
+#hero h2{
+    position: relative;
+    color: white;
+    z-index: 2;
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: 3rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.home_search{
+    position: absolute;
+    padding: 10px;
+    top: 80px;
+    left: 80px;
+    width: 200px;
+    height: 250px;
+    background-color: white;
+    z-index: 2;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.home_search input{
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.home_search .freq_search{
+    color: black;
+}
+
+.freq_search h4{
+    margin-bottom: 10px;
+}
+.home_search .search_item{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.home_search form input,button{
+    margin: 5px;
+}
+
+.home_search form input{
+    border: none;
+    border-bottom: 1px solid #0D3A4F;
+    outline: none;
+    font-size: 1rem;
+}
+
+.home_search form button{
+    color: white;
+    background-color: #0D3A4F;
+    border: none;
+    padding: 5px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+
+.home_search .freq_search img{
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+}
+
+.home_search .freq_search h5{
+    padding: 10px;
+}
+/* --------------city section----------------- */
+#city{
+    display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .city .left_city,.right_city{
+        width: 400px;
+        height: 300px;
+    }
+    .left_city{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        padding: 0 40px;
+        color: #0D3A4F;
+    }
+    .left_city .button{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 5px;
+    }
+    .left_city .button button{
+        border: 1px solid #0D3A4F;
+        font-weight: 600;
+        color: #0D3A4F;
+        background-color: white;
+        padding: 5px;
+        cursor: pointer;
+    }
+    .left_city .button button:hover{
+        background-color: #0D3A4F;
+        color: white;
+        
+    }
+    .right_city img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    /* --------------city section----------------- */
+    #testimonies{
+        background-color: #64737a;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 40px 20px;
+        gap: 20px;
+    }
+    .testimonies img{
+        width: 20px;
+        height: 20px;
+        object-fit: cover;
+        
+    }
+
+    .testimonies .test_item{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        max-width:200px ;
+        text-align: center;
+    }
+    .test_item h3{
+        font-size: 1.2rem;
+    }
+    .test_item p{
+        font-size: 0.9rem;
+    }
+/* --------------explore section----------------- */
+    .explore{
+        background-color: #e5e8e9;
+        color: white;
+        text-align: center;
+        padding: 40px;
+    }
+    .explore_top{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+    .explore_top img{
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+    .explore_top .top_right{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #0D3A4F;
+    }
+    .top_right .top_right_text{
+        padding: 0px 10px;
+    }
+    .top_right_text button{
+        border: 1px solid #0D3A4F;
+    }
+    .top_right_text button{
+        background-color: #0D3A4F;
+        border: 1px solid #0D3A4F;
+        padding: 5px 10px;
+        border-radius: 3px;
+        color: white;
+        cursor: pointer;
+    }
+    .top_right img{
+        width: 50%;
+        object-fit: cover;
+    }
+    .explore_bottom{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        flex-direction: row-reverse;
+    }
+    .explore_bottom img{
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+    .explore_bottom .bottom_right{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #0D3A4F;
+    }
+    .bottom_right img{
+        width: 50%;
+        object-fit: cover;
+    }
+/* --------------Footer----------------- */
+footer{
+    background-color: black;
+    color: white;
+    height: 100px;
+    padding: 10px 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+footer .other_pages{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.other_pages a{
+    text-decoration: none;
+    color: white;
+}
+
+.social img{
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+}
